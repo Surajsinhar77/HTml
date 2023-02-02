@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Div layout </title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+
+        }
+
+        .first_div{
+            height: 200px;
+            width: 100vw;
+            background-color: blueviolet;
+        }
+
+        .second_div{
+            display: flex;
+            /* background-color: orange; */
+            height: 500px;
+            width: 100vw;
+        }
+
+        .sub_2nd_one{
+            width: 50vw;
+            height: 100%;
+            /* background-color: aqua; */
+        }
+
+        .sub_2nd_two{
+            width: 50vw;
+            height: 100%;
+            /* background-color: brown; */
+        }
+
+        .subsq{
+            width: 80%;
+            height: 100%;
+            background-color: grey;
+            float: right;
+        }
+
+        .subsq2{
+            width: 80%;
+            height: 100%;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+
+        <div class="first_div">
+            <header> <h1>Heading for all </h1> </header>
+        </div>
+
+        <div class="second_div">
+            <div class="sub_2nd_one">
+                <div class="subsq">
+
+                </div>
+            </div>
+            <div class="sub_2nd_two">
+                <div class="subsq2">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>

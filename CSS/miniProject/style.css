@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 150px
+}
+
+.Mainheading{
+    font-weight: 200;
+    text-align: center;
+    font-size: 7rem;
+}
+
+.logoAndTag{
+    position: absolute;
+    bottom: 40px;
+}
+
+.leftDiv{
+    width: 48%;
+    /* text-align: center; */
+    height: 100%;
+}
+
+.subHead{
+    font-style: italic;
+    font-size: 2rem;
+    /* color: rgba(255, 255, 0, 0.598); */
+}
+
+.rightDiv{
+    width: 48%;
+    background-color: black;
+    /* color: orange; */
+    height: 100%;
+    border-top-left-radius: 60px;
+    padding-left: 60px;
+}
+.rightContent{
+    position: relative;
+    padding-left: 55px;
+    padding-top: 50px;
+    /* left: 50px; */
+    font-size: 47.913px;
+    color: orange;
+}
+
+.paraInOl{
+    color: grey;
+}
+
+ol{
+    color: grey;
+}
+
+.lowerList{
+    color: grey;
+}
+
+.whiteText{
+    color: white;
+}
+
+.htmlel{
+    color: orange;
+}
+
+.paraInOl{
+    position: relative;
+    /* left: 5px; */
+    /* padding: 0px; */
+    /* margin: 0; */
+}

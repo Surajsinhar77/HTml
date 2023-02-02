@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+            background-color: yellow;
+        }
+
+        nav{
+            height:80px;
+            background-color: aqua;
+        }
+
+        .main_container{
+            height: 60vh;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sub_container_left{
+            height: 100%;
+            background-color: orange;
+            width: 24vw;
+        }
+
+        .sub_mainContainer{
+            height: 100%;
+            background-color: darkgreen;
+            width: 50vw;
+        }
+
+        .sub_container_right{
+            height: 100%;
+            background-color: crimson;
+            width: 24vw;
+        }
+        footer{
+            height: 19vh;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h2>Heading</h2>
+        </header>
+
+        <nav> <h4>Nav part here</h4> </nav>
+
+        <div class="main_container">
+            <div class="sub_container_left">
+                sub container left
+            </div>
+            <div class="sub_mainContainer">
+                sub main container
+            </div>
+            <div class="sub_container_right">
+                sub container right
+            </div>
+        </div>
+
+        <footer>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam optio, ratione tempore impedit maiores omnis dolorem quis aspernatur explicabo tempora corrupti totam minima mollitia eum ab quae ullam nostrum voluptatibus.
+        </footer>
+    </div>
+
+
+</body>
+</html>

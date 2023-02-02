@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+        }
+
+        .mainContainer{
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            border-radius: 25px;
+        }
+
+        .col{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* .massagebox{
+            
+        } */
+
+        .address{
+            width: 32.4rem;
+        }
+        .col .row .massagebox{
+            width: 32.3rem;
+            height: 4rem;
+        }
+
+        input{
+            border: 1.5px solid rgba(128, 128, 128, 0.783);
+            height: 1.4rem;
+            border-radius: 15px;
+        }
+
+        .submit_btn{
+            /* align-items: center; */
+            /* text-align: center; */
+            /* padding: 10px 10px; */
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            border: 1px solid gray;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="mainContainer">
+            <form  class="form">
+                <div class="col">
+                    <div class="row">
+                        <label for=""> First Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for=""> Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for=""> Phone No</label>
+                        <input type="number">
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="row">
+                        <label for="">massage</label>
+                        <textarea class="massagebox" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <label for="">Address</label>
+                        <input class="address" type="text">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <label for="">City</label>
+                        <input type="text">
+                    </div>
+                    <div class="row">
+                        <label for="">Pincode</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <input class="submit_btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
