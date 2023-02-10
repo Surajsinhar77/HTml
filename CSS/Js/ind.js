@@ -1,5 +1,3 @@
-
-
 // console.log('hello world');
 // let a = 9;
 // let A = 5;
@@ -10,11 +8,11 @@
 
 // var g = 3;
 
-    // {
-    //     var g = 8;
-    // }
+// {
+//     var g = 8;
+// }
 
-    // console.log(g);
+// console.log(g);
 
 // var c = 10;
 // // var t = 2
@@ -25,25 +23,21 @@
 // var c = "hjadh";
 // console.log(typeof(c));
 
-
 // comparison operator
-// equal to  w===t 
+// equal to  w===t
 // greater than 2 < 1    false
 // smaller than 2 > 1    true
 // smaller than 0 >= 1   false
 
-
-// and , or , not 
+// and , or , not
 
 // && , || , !=
-
 
 // AND  &&
 // true && false  = false
 // false && false = false
 // false && true = false
 // true && true = true;
-
 
 // or ||
 
@@ -52,11 +46,9 @@
 // false || true = true;
 // true || true = true;
 
-
 // not !=
 // true  = false
 // false = true;
-
 
 // let age = 19
 
@@ -66,26 +58,17 @@
 //     console.log(" now it my turn")
 // }
 
-
 // if(true){
 //     console.log("i am also here")
 // }
 
-
-
-
-
-
-
-// if(  ){  //comparesion operator 
+// if(  ){  //comparesion operator
 //     console.log("i am a boy")
 // }
 
 // console.log(c*2);
 
-
 // console.log(a, A);
-
 
 // ---------------------------------------------------------
 
@@ -98,7 +81,6 @@
 // }else{
 //     console.log("adult")
 // }
-
 
 // ---------------------------------------------------------
 // let a = 2;
@@ -133,7 +115,6 @@
 //     a = a+1;  // a =  1+1 // 2
 // }
 
-
 // let y = 0;
 // while(y < 5){
 //     console.log("Suraj Kumar")
@@ -145,9 +126,7 @@
 // *****
 // *****
 
-
-
-// let a = 'C' 
+// let a = 'C'
 
 // switch(a) {
 //     case 'A':
@@ -156,7 +135,7 @@
 //     case 'B':
 //         console.log("i got B");
 //         break;
-//     case 'C': 
+//     case 'C':
 //         console.log("i got C")
 //         break;
 //     default:
@@ -165,7 +144,6 @@
 // }
 
 // console.log(" here i came")
-
 
 // let a = 12
 // let i = 1;
@@ -181,9 +159,6 @@
 //     i++; // i = i+1  // 2 * 1 = 2  // 2 * 2 = 4
 // }
 
-
-
-
 // let a =7;
 // for(let i = 1; i<=10; i++){
 //     console.log(a , "*" , i , " = ", a*i);
@@ -196,10 +171,143 @@
 //     console.log(b , "*" , i , " = ", b*i);
 // }
 
-// *
+// *        start = 0;  end 5; 
 // **
 // ***
 // ****
 // *****
+
+// for(let i = 0; i<5; i++){ // 1, 2
+//     let str ="";
+//     for(let j = 0; j<=i; j++){  // 0<=0
+//             str=str+"*";
+//     }
+//     console.log(str);
+// }
+
+//*****  start = 5;  end = 1;  i-- i 5 i   == 3
+//****    for(j=0; j<i; j++){    o<5   1<5  2<5    5<5    0<4 1<4  2<4 3<4 4<4
+
+    //}
+//***
+//**
+//* 
+
+
+// ***** 
+// ****
+// ***
+
+
+// for( let i =5; i>0;  i--){   //  5> 0 4<0
+//     let str;
+//     for(let j = 0; j<i; j++){    0<5
+//         str = str+"*";                       // ****    5<5  0 <4
+//     }
+//     console.log(str);
+// }
+
+// let a="";
+
+// console.log(typeof(a))
+
+
+// for (let i = 5; i > 0; i--) {
+//     let str = ""
+//     for (let j = 0; j < i; j++) {
+//         str = str+"*";
+//     }
+//     console.log(str);
+// }
+//     *
+//    **
+//   ***
+//  ****
+// *****
+
+
+// second largest number in array 
+//let Ary = [23, 27, 31,7, 11, 15, 19];
+
+
+
+//let size = Ary.length;
+//let max  = 0;  // 23  27
+
+// for(let i =0; i<size; i++){   // 
+//     if(max < Ary[i]){  
+//         max = Ary[i];
+//     }
+// }
+
+// let secondMax = 0;   // 27
+
+// for(let i =0; i<size; i++){
+//     if(secondMax < Ary[i] && Ary[i] < max){  // 27  < 31  && 31 < 31
+//         secondMax = Ary[i];
+//     }
+// }
+
+// console.log(max);
+// console.log(secondMax)
+
+// console.log(Ary);
+
+// let Ary = [23, 27, 31,7, 11, 15, 19]  
+// let item = 103;
+
+// let flag = false;
+
+// for(let i =0; i<Ary.length; i++){
+//     if(Ary[i] == item){
+//         flag = true;
+//         break;
+//     }
+// }
+
+// console.log(flag);
+
+let arr=[1,2,3,4,5];  // 1 2 3 4 4 5    arr[3] = 6
+
+// for(let i=0;i<arr.length;i++)
+// {
+//     var sum=0;
+//     sum+=arr[i]; // sum = sum + arr[i];
+// }
+
+// let index =  3;
+// let size = arr.length;
+
+// console.log(size)
+
+// for(let i = size; i> index; i--){ //  5   3 > 3
+//     arr[i]  = arr[i-1];
+// }
+
+// arr[3] = 6;
+
+// console.log(arr);
+
+// let a = 9;
+// let b = 5;
+
+// let c = a;  //  c = 9    a  = b   b  = c
+// a = b;
+// b = c;
+
+// console.log('the ans for a=   ', a ,' this is for b = ', b);
+// a b
+// console.log((2 > 3) ? " this is false " : " this is true ");
+
+let student = {
+    name : "Suraj",
+    class : "616",
+    roll_no : 8187,
+}
+
+console.log(student.name);
+console.log(student.class);
+console.log(student.roll_no);
+
 
 
