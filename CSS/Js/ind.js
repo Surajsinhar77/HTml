@@ -382,7 +382,33 @@ let student = [
 // let ans2  = add_number(7, 4);
 // console.log(ans+1);
 
+// -----------------------------------------
+// String
 
+// let a = "Sure";
+// let b = "Trust";
+
+// let h = "MOM";
+// let x = a+b;
+// console.log(x);
+
+// console.log("t" === "t");
+
+// ---------------------------------
+
+function isPalandrone(a){
+    // let flag = true;
+    let j= a.length-1;
+    for(let i =0; i<j; i++){
+        if(a[i] != a[j]){
+            return false;
+        }
+        j--;
+    }
+    return true;
+}
+
+console.log(isPalandrone("madam"));
 
 
 
