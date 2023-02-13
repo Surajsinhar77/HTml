@@ -267,7 +267,7 @@
 
 // console.log(flag);
 
-let arr=[1,2,3,4,5];  // 1 2 3 4 4 5    arr[3] = 6
+//let arr=[1,6,3,13,2];  // 1 2 3 4 4 5    arr[3] = 6 // 1 2 3 6 13
 
 // for(let i=0;i<arr.length;i++)
 // {
@@ -299,15 +299,90 @@ let arr=[1,2,3,4,5];  // 1 2 3 4 4 5    arr[3] = 6
 // a b
 // console.log((2 > 3) ? " this is false " : " this is true ");
 
-let student = {
+let student = [
+
+    { 
     name : "Suraj",
     class : "616",
     roll_no : 8187,
-}
+    }, 
+    
+    {
+        name : "vikee",
+        class : "617",
+        roll_no : 8182,
+    },
 
-console.log(student.name);
-console.log(student.class);
-console.log(student.roll_no);
+    {
+        name : "rahul",
+        class : "617",
+        roll_no : 8182,
+    },
+    {
+        name : "rohan",
+        class : "617",
+        roll_no : 8182,
+    },
+]
+
+
+// console.log(student.name, student.class, student.roll_no);
+// console.log(student.name);
+// console.log(student.class);
+// console.log(student.roll_no);
+
+// console.log(student[1].name)
+// let i = 0;
+
+// student.map((item)=>{
+//     console.log(item.name, item.class, item.roll_no);
+//     i++;
+// })
+
+
+// bubble sort  in  array 
+
+// let arr =[1, 3 ,13 , 21 ,2, 5 , 4 , 7 ]; 
+
+// for(let i=0; i<arr.length; i++){   // 0 < 9
+//     for(let j = 0; j<(arr.length-1)-i; j++){  // 1  2, 8
+//         if( arr[j]>arr[j+1]){  // 1 > 21   21 > 3  0 < 1 0 2 0 3 
+//             let temp  =  arr[j];
+//             arr[j] = arr[j+1];
+//             arr[j+1] = temp;
+//         }
+//     }
+// }
+
+
+
+// let arr = [1, 3 ,13 , 21 , 2, 5 , 4 , 7]; 
+
+// let i = 0,j = arr.length-1;
+// while( i < j){
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++; j--;
+// }
+
+// console.log(arr)
+
+// [7 4 5 2 21 13 3 1 ]
+
+
+// Function
+
+// function add_number(a , b){
+//     let x = a+b;
+//     return x;
+// }
+
+// let ans = add_number(1,4);
+// let ans2  = add_number(7, 4);
+// console.log(ans+1);
+
+
 
 
 
