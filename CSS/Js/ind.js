@@ -436,8 +436,10 @@ console.log(info.divname.div2(20,2,2));
 
 // ======================== FAT ARROW Function ==============
 
-// const fun1 = (a, b) => {
-//     return(a+b);
-// }
+const fun1 = (a, b) => {
+    return(a+b);
+}
 
 // console.log(fun1(2,2));
+
+console.log("The Answer of adding two number : ", fun1(3,5)," is the result of it")
