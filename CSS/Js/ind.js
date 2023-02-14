@@ -396,19 +396,48 @@ let student = [
 
 // ---------------------------------
 
-function isPalandrone(a){
-    // let flag = true;
-    let j= a.length-1;
-    for(let i =0; i<j; i++){
-        if(a[i] != a[j]){
-            return false;
-        }
-        j--;
+// function isPalandrone(a){
+//     let j= a.length-1;
+//     for(let i =0; i<j; i++){
+//         if(a[i] != a[j]){
+//             return false;
+//         }
+//         j--;
+//     }
+//     return true;
+// }
+// console.log(isPalandrone("madam"));
+
+
+//  function in the Objects
+
+const info = {
+    add : (a , b)=> {return a+b},
+    mult : (a, b)=> { return a*b },
+    divname :  {
+        div1 : (a,b )=> { return a/b},
+        div2 : (a, b, c)=> {return (a/b)/c},
     }
-    return true;
 }
 
-console.log(isPalandrone("madam"));
+// console.log(info.add(1,5));
+// console.log(info.mult(5,2));
 
+// console.log(info.divname.div1(10,2));
+console.log(info.divname.div2(20,2,2));
 
+// const infomation = {
+//     name : "suraj",
+//     id : 1231,
+// }
 
+// console.log(infomation.name);
+// console.log(infomation.id);
+
+// ======================== FAT ARROW Function ==============
+
+// const fun1 = (a, b) => {
+//     return(a+b);
+// }
+
+// console.log(fun1(2,2));
