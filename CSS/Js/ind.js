@@ -442,4 +442,6 @@ const fun1 = (a, b) => {
 
 // console.log(fun1(2,2));
 
-console.log("The Answer of adding two number : ", fun1(3,5)," is the result of it")
+// console.log("The Answer of adding two number : ", fun1(3,5)," is the result of it")
+
+// DOM  ( Document Object Model )
