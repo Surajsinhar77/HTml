@@ -27,7 +27,7 @@ const iamHeading = document.querySelector('.iamHeading');
 
 for(let i =0; i<student.length; i++){
 
-    let html  =   ` <tr class="tabelData">
+    let html  =   ` <tr class="tabelData ">
     <td>${student[i].name} </td>
     <td>${student[i].id} </td>
     <td> ${student[i].class}</td>
@@ -37,6 +37,17 @@ for(let i =0; i<student.length; i++){
     `;
     iamHeading.insertAdjacentHTML( 'afterend' , html);
 }
+
+const tableData1  = document.querySelector('.tabelData');
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', ()=>{
+    console.log(tableData1);
+    tableData1.classList.add('hideTable');
+})
+
+
+
 
 
 
