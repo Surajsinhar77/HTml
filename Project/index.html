@@ -107,6 +107,12 @@
             border: none;
         }
 
+        .containNotes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
     </style>
 </head>
 <body>
@@ -114,25 +120,15 @@
     <div class="container">
         <div class="lists">
             <h2 class="hd4notes"> Notes </h2>
-            <div class="notes">
-                <div class="firstNote content">
-                    <div class="note1">
-                        <textarea class='writingPart'></textarea>
-                        <button class="deleteDtn"> D </button>
-                    </div>
-                </div>
-                
-                <div class="secondNote content">
-                    <div class="note1">
-                        <textarea class='writingPart'></textarea>
-                        <button class="deleteDtn"> D </button>
-                    </div>
-                </div>
-                <div class="btn">
-                    <span class="outerSpan">  </span>
-                    <span class="innerSpan"></span>
-                </div>
+        
+        <div class="containNotes">
+
+        </div>
+
+            <div class="btn">
+                <button class="addNotes">ADD</button>
             </div>
+            
         </div>
     </div>
 

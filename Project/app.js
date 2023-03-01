@@ -1,50 +1,27 @@
+const addBtn = document.querySelector('.addNotes');
+const containNotes = document.querySelector('.containNotes');
 
 
-const outerSpan = document.querySelector('.outerSpan');
-const innnerSpan = document.querySelector('.innerSpan');
-
-const firstNote = document.querySelector('.notes ');
-
-const secondNote = document.querySelector('.secondNote');
-
-let i = 0;
-
-let theNote = `  
-    <div class="content con${i}">
-    <div class="note1">
-        <textarea class='writingPart'></textarea>
-        <button class="deleteDtn btnn${i}"> D </button>
-    </div>
+const addHTML = `
+    <div class="firstNote content">
+        <div class="note1">
+            <textarea class='writingPart'></textarea>
+            <button class="deleteDtn"> D </button>
+        </div>
     </div>
 `
 
-secondNote.classList.remove('hidden');
+function addNotesInPage(){
 
-const notestext = document.querySelectorAll('.content');
-console.log(notestext);
+    const notes = document.createElement('div');
+    notes.classList.add('notes');
 
-outerSpan.addEventListener('click', ()=>{
-    i++;
-    console.log(i);
-    firstNote.insertAdjacentHTML('afterbegin', theNote);
-});
+    notes.insertAdjacentHTML('afterbegin', addHTML );
 
+    const dltBtm = notes.querySelector('.deleteDtn');
+    containNotes.appendChild(notes);
 
-innnerSpan.addEventListener('click', ()=>{
-    i++;
-    console.log(i);
+    dltBtm.addEventListener('click', ()=> { notes.remove() });
+}
 
-    firstNote.insertAdjacentHTML('afterbegin', theNote);
-})
-
-// const content = document.querySelectorAll('.content');
-// let btn = content.querySelector('.deleteDtn');
-
-let a  = document.querySelector(`.btnn${i}`);
-
-let b = document.querySelector(`con${i}`);
-
-
-a.addEventListener('click', ()=>{
-    b.remove();
-})
+addBtn.addEventListener('click', addNotesInPage);
