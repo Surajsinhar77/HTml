@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.collapse{
+    width: 300px;
+    display: flex;
+
+}
+
+.navbar-nav{
+    justify-items: end;
+    /* background-color: red; */
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+
+.nav-link{
+    cursor: pointer;
+}
+
+.content{
+    width: 99%;
+}
+
+.homePreviewSection{
+    background-color: rgba(224, 221, 221, 0.814);
+}
+
+.lefthomeview, .righthomeview{
+    height: 100vh;
+}
+
+.displayflex{
+    display: flex;
+}
+
+.lefthomeview{
+    display: grid;
+    align-self: center;
+    align-items: center;
+}
+
+.righthomeview{
+    display: grid;
+    align-self: center;
+    align-items: center;
+}
+
+.mainheading{
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin:  0 auto;
+    font-weight: 300;
+    /* text-align: center; */
+}
+
+
+
+.imgContainer{
+    /* display: grid; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+.personImg{
+    width: 600px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin:  0 auto;
+}
